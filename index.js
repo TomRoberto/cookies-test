@@ -28,7 +28,7 @@ app.post("/cookie", (req, res) => {
       httpOnly: true,
       sameSite: "none",
       secure: true,
-      //   domain: ",
+      domain: "magenta-dolphin-7f08eb.netlify.app",
     })
     .json({ message: "cookie ?" });
 });
