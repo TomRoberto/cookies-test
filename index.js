@@ -16,6 +16,7 @@ app.post("/cookie", (req, res) => {
       httpOnly: true,
       sameSite: "none",
       secure: true,
+      domain: "app.netlify.com",
     })
     .json({ message: "cookie ?" });
 });
