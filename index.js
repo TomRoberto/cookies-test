@@ -14,6 +14,8 @@ app.post("/cookie", (req, res) => {
     .cookie("token", "1234567890", {
       expires: new Date(Date.now() + 10 * 24 * 60 * 60 * 1000),
       httpOnly: true,
+      sameSite: "none",
+      secure: true,
     })
     .json({ message: "cookie ?" });
 });
